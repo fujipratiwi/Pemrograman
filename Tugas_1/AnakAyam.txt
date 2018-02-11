@@ -1,0 +1,12 @@
+program anakayam;
+uses crt;
+var
+n,i:integer;
+begin
+write('masukan jumlah anak ayam = ');readln(n);
+writeln ('anak ayam turun ' ,n);
+for i :=n downto 2 do
+writeln('anak ayam turun ' ,i,', mati satu tinggal ',i-1);
+writeln('anak ayam turun 1, mati satu tinggal induknya');
+readkey;
+end.
