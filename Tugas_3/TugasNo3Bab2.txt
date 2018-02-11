@@ -1,0 +1,15 @@
+program HurufMutu;
+uses crt;
+var nilai: integer;
+begin
+write ('Masukan Nilai :');readln (nilai);
+case (nilai) of
+50..59 : write ('Nilai D');
+60..79 : write ('Nilai C');
+80..89 : write ('Nilai B');
+90..100 : write ('Nilai A');
+else
+writeln ('Input Data Salah');
+end;
+readkey;
+end.
