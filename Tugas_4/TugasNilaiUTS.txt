@@ -1,0 +1,41 @@
+program REMED;
+uses crt;
+var
+Al,SBO,RTI,BI,Pnc:integer;
+MatkulAl,MatkulSBO,MatkulRTI,MatkulBI,MatkulPnc:string;
+begin
+clrscr;
+Writeln ('Masukan Nilai Alpro :'); readln (Al);
+Writeln ('Masukan Nilai SBO :'); readln (SBO);
+Writeln ('Masukan Nilai RTI :'); readln (RTI);
+Writeln ('Masukan Nilai Bahasa Indonesia :'); readln (BI);
+Writeln ('Masukan Nilai Pancasila :'); readln (Pnc);
+if (Al>50) and (SBO>50) and (RTI>50) and (BI>50) and (Pnc>50)then
+begin
+writeln ('Anda Tidak Mendapat Remedial')
+end;
+begin
+if Al<50 then
+begin
+MatkulAl:='Alpro'
+end;
+if SBO<50 then
+begin
+MatkulSBO:='SBO'
+end;
+if RTI<50 then
+begin
+MatkulRTI:='RTI'
+end;
+if BI<50 then
+begin
+MatkulBI:='Bahasa Indonesia'
+end;
+if Pnc<50 then
+begin
+MatkulPnc:='Pancasila'
+end;
+write ('Remedial:'+MatkulA+''+MatkulS+''+MatkulR+''+MatkulBI+''+MatkulP);
+end;
+readkey;
+end.

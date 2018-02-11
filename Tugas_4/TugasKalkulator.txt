@@ -1,0 +1,21 @@
+program KalKu;
+uses crt;
+var
+Blg1,Blg2: integer;
+SimBlg:char;
+hasil:real;
+begin
+write ('Masukan Bilangan 1 :'); readln (Blg1);
+write ('Simbol = (*) (/) (+) (-):'); readln (SimBlg);
+write ('Masukan Bilangan 2 :'); readln (Blg2);
+if SimBlg='*'then
+hasil:=Blg1*Blg2;
+if SimBlg='/' then
+hasil:=Blg1/Blg2;
+if SimBlg='+' then
+hasil:=Blg1+Blg2;
+if SimBlg='-' then
+hasil:=Blg1-Blg2;
+writeln ('Hasil',hasil :3:2);
+readkey;
+end.
