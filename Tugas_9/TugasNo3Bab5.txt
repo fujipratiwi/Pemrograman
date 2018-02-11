@@ -1,0 +1,27 @@
+program replace; 
+
+uses
+  crt;
+
+
+var
+  i: Integer;
+  kalimat: String;
+
+
+begin
+  Write('masukan kalimat :');
+  ReadLn(kalimat);
+  if (kalimat <> '') and (Length(kalimat) > 0) then
+    begin
+      for i := 1 to length(kalimat) do 
+        begin
+          if kalimat[i] <> ' ' then
+            begin
+              kalimat[i] := kalimat[i] + 1;
+            end ;
+        end;
+    end ;
+  Write(kalimat);
+  readln;
+end.
