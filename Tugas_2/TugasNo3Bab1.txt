@@ -1,0 +1,12 @@
+uses crt;
+var
+p,l:integer;
+hasilkali:integer;
+begin
+writeln('Luas Persegi Panjang');
+write('masukan panjang=');readln(p);
+write('masukan lebar=');readln(l);
+hasilkali:=P*l;
+writeln(p,'*',l,'=',hasilkali);
+readkey;
+end.
