@@ -1,0 +1,30 @@
+program combination;
+uses crt;
+var m,z,n,i,b:longint;
+procedure faktorial(var a:longint);
+var
+x:longint;
+begin
+x:=1;
+for i := a downto 1 do
+x:=x*i;
+a:=x;
+end;
+procedure kombinasi(var l:longint);
+begin
+faktorial(z);
+b:=n*z;
+l:=m div b;
+writeln('Kombinasi = ',l);
+end;
+begin
+clrscr;
+write('Berapa n? '); readln(m);
+b:=m;
+faktorial(m);
+write('Berapa r? '); readln(n);
+z:=b-n;
+faktorial(n);
+kombinasi(n);
+readkey;
+end.
